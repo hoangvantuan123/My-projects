@@ -1,0 +1,484 @@
+{
+    "DATA": [{
+            "STT": 1,
+            "MSV": 6661317,
+            "Name": "Đoàn Thị Phương",
+            "FIELD4": "Anh",
+            "Age": "28/09/03",
+            "Class": "K66KEC"
+        },
+        {
+            "STT": 2,
+            "MSV": 655218,
+            "Name": "Nguyễn Ngọc Phương",
+            "FIELD4": "Anh",
+            "Age": "08/09/02",
+            "Class": "K65ENGC"
+        },
+        {
+            "STT": 3,
+            "MSV": 6661738,
+            "Name": "Nguyễn Việt",
+            "FIELD4": "Anh",
+            "Age": "01/09/03",
+            "Class": "K66TYB"
+        },
+        {
+            "STT": 4,
+            "MSV": 650762,
+            "Name": "Phạm Vân",
+            "FIELD4": "Anh",
+            "Age": "29/08/02",
+            "Class": "K65QLNNLA"
+        },
+        {
+            "STT": 5,
+            "MSV": 6661995,
+            "Name": "Trần Minh",
+            "FIELD4": "Anh",
+            "Age": "17/10/03",
+            "Class": "K66KDTPA"
+        },
+        {
+            "STT": 6,
+            "MSV": 651688,
+            "Name": "Trần Thị Lan",
+            "FIELD4": "Anh",
+            "Age": "15/07/02",
+            "Class": "K65KEKTC"
+        },
+        {
+            "STT": 7,
+            "MSV": 655365,
+            "Name": "Nguyễn Hoàng",
+            "FIELD4": "Danh",
+            "Age": "08/03/02",
+            "Class": "K65KTB"
+        },
+        {
+            "STT": 8,
+            "MSV": 652306,
+            "Name": "Trần Thị Phương",
+            "FIELD4": "Dung",
+            "Age": "01/06/02",
+            "Class": "K65KEKTC"
+        },
+        {
+            "STT": 9,
+            "MSV": 651810,
+            "Name": "Nguyễn Thị",
+            "FIELD4": "Duyên",
+            "Age": "31/07/02",
+            "Class": "K65ENGC"
+        },
+        {
+            "STT": 10,
+            "MSV": 651374,
+            "Name": "Đinh Quang",
+            "FIELD4": "Dương",
+            "Age": "19/10/02",
+            "Class": "K65CNKTOB"
+        },
+        {
+            "STT": 11,
+            "MSV": 655502,
+            "Name": "Nguyễn Thị",
+            "FIELD4": "Định",
+            "Age": "10/07/02",
+            "Class": "K65KTB"
+        },
+        {
+            "STT": 12,
+            "MSV": 651332,
+            "Name": "Đào Anh",
+            "FIELD4": "Đức",
+            "Age": "15/06/02",
+            "Class": "K65CNTPC"
+        },
+        {
+            "STT": 13,
+            "MSV": 654389,
+            "Name": "Lò Thị Hương",
+            "FIELD4": "Giang",
+            "Age": "24/04/02",
+            "Class": "K65KTB"
+        },
+        {
+            "STT": 14,
+            "MSV": 652616,
+            "Name": "Tạ Thị",
+            "FIELD4": "Hạnh",
+            "Age": "14/01/02",
+            "Class": "K65KTTCA"
+        },
+        {
+            "STT": 15,
+            "MSV": 6650141,
+            "Name": "Bùi Thị",
+            "FIELD4": "Hằng",
+            "Age": "15/04/03",
+            "Class": "K66KEC"
+        },
+        {
+            "STT": 16,
+            "MSV": 650814,
+            "Name": "Dương Thị",
+            "FIELD4": "Hằng",
+            "Age": "29/05/02",
+            "Class": "K65KEC"
+        },
+        {
+            "STT": 17,
+            "MSV": 653925,
+            "Name": "Nguyễn Thị Thúy",
+            "FIELD4": "Hằng",
+            "Age": "16/07/02",
+            "Class": "K65KEA"
+        },
+        {
+            "STT": 18,
+            "MSV": 655367,
+            "Name": "Nguyễn Thị",
+            "FIELD4": "Hậu",
+            "Age": "14/06/02",
+            "Class": "K65KTB"
+        },
+        {
+            "STT": 19,
+            "MSV": 656027,
+            "Name": "Nguyễn Thị",
+            "FIELD4": "Hiền",
+            "Age": "30/08/02",
+            "Class": "K65TYF"
+        },
+        {
+            "STT": 20,
+            "MSV": 652182,
+            "Name": "Vũ Thị Mai",
+            "FIELD4": "Hoa",
+            "Age": "12/04/02",
+            "Class": "K65QLNNLA"
+        },
+        {
+            "STT": 21,
+            "MSV": 6653496,
+            "Name": "Nguyễn Thị",
+            "FIELD4": "Hoài",
+            "Age": "26/04/03",
+            "Class": "K66KEC"
+        },
+        {
+            "STT": 22,
+            "MSV": 6652843,
+            "Name": "Nguyễn Huy",
+            "FIELD4": "Hoàng",
+            "Age": "11/06/03",
+            "Class": "K66KEC"
+        },
+        {
+            "STT": 23,
+            "MSV": 652488,
+            "Name": "Phạm Việt",
+            "FIELD4": "Hoàng",
+            "Age": "10/05/02",
+            "Class": "K65CNKTOB"
+        },
+        {
+            "STT": 24,
+            "MSV": 655060,
+            "Name": "Tạ Trần Minh",
+            "FIELD4": "Hoàng",
+            "Age": "10/09/02",
+            "Class": "K65QTLOA"
+        },
+        {
+            "STT": 25,
+            "MSV": 650490,
+            "Name": "Triệu Việt",
+            "FIELD4": "Hoàng",
+            "Age": "17/08/02",
+            "Class": "K65NNCNCA"
+        },
+        {
+            "STT": 26,
+            "MSV": 652553,
+            "Name": "Đặng Ngọc",
+            "FIELD4": "Huy",
+            "Age": "23/10/02",
+            "Class": "K65KTB"
+        },
+        {
+            "STT": 27,
+            "MSV": 652336,
+            "Name": "Nguyễn Ngọc",
+            "FIELD4": "Lan",
+            "Age": "27/08/02",
+            "Class": "K65KEKTC"
+        },
+        {
+            "STT": 28,
+            "MSV": 6666416,
+            "Name": "Nguyễn Thị Hoàng",
+            "FIELD4": "Lan",
+            "Age": "29/05/03",
+            "Class": "K66KEH"
+        },
+        {
+            "STT": 29,
+            "MSV": 651975,
+            "Name": "Phạm Thị Ngọc",
+            "FIELD4": "Lan",
+            "Age": "13/08/02",
+            "Class": "K65ENGC"
+        },
+        {
+            "STT": 30,
+            "MSV": 652204,
+            "Name": "Nguyễn Khánh",
+            "FIELD4": "Linh",
+            "Age": "30/03/02",
+            "Class": "K65QLNNLA"
+        },
+        {
+            "STT": 31,
+            "MSV": 654600,
+            "Name": "Nguyễn Gia",
+            "FIELD4": "Long",
+            "Age": "28/11/99",
+            "Class": "K65KTB"
+        },
+        {
+            "STT": 32,
+            "MSV": 654969,
+            "Name": "Thân Văn",
+            "FIELD4": "Mạnh",
+            "Age": "22/12/00",
+            "Class": "K65KTB"
+        },
+        {
+            "STT": 33,
+            "MSV": 654212,
+            "Name": "Vũ Bình",
+            "FIELD4": "Minh",
+            "Age": "26/04/02",
+            "Class": "K65CNTPC"
+        },
+        {
+            "STT": 34,
+            "MSV": 651381,
+            "Name": "Nguyễn Trà",
+            "FIELD4": "My",
+            "Age": "16/04/02",
+            "Class": "K65QTLOA"
+        },
+        {
+            "STT": 35,
+            "MSV": 655293,
+            "Name": "Nguyễn Thị Hồng",
+            "FIELD4": "Ngọc",
+            "Age": "02/01/02",
+            "Class": "K65KTDTA"
+        },
+        {
+            "STT": 36,
+            "MSV": 652377,
+            "Name": "Vũ Thị Hồng",
+            "FIELD4": "Ngọc",
+            "Age": "12/12/02",
+            "Class": "K65TYF"
+        },
+        {
+            "STT": 37,
+            "MSV": 651799,
+            "Name": "Nguyễn Sỹ",
+            "FIELD4": "Nguyên",
+            "Age": "19/11/02",
+            "Class": "K65KTTCA"
+        },
+        {
+            "STT": 38,
+            "MSV": 655043,
+            "Name": "Nguyễn Thị Thanh",
+            "FIELD4": "Nhàn",
+            "Age": "22/06/02",
+            "Class": "K65KED"
+        },
+        {
+            "STT": 39,
+            "MSV": 651615,
+            "Name": "Nguyễn Hồng",
+            "FIELD4": "Phong",
+            "Age": "29/04/02",
+            "Class": "K65CNKTOB"
+        },
+        {
+            "STT": 40,
+            "MSV": 651633,
+            "Name": "Bùi Đình",
+            "FIELD4": "Phú",
+            "Age": "27/06/99",
+            "Class": "K65NNCNCA"
+        },
+        {
+            "STT": 41,
+            "MSV": 654391,
+            "Name": "Lò Minh",
+            "FIELD4": "Phước",
+            "Age": "30/05/02",
+            "Class": "K65NNCNCA"
+        },
+        {
+            "STT": 42,
+            "MSV": 651823,
+            "Name": "Lê Thị",
+            "FIELD4": "Quyên",
+            "Age": "17/04/02",
+            "Class": "K65ENGC"
+        },
+        {
+            "STT": 43,
+            "MSV": 642959,
+            "Name": "Nguyễn Văn",
+            "FIELD4": "Thái",
+            "Age": "28/02/01",
+            "Class": "K64CNTPE"
+        },
+        {
+            "STT": 44,
+            "MSV": 652105,
+            "Name": "Phan Viết Quang",
+            "FIELD4": "Thái",
+            "Age": "08/10/02",
+            "Class": "K65CNTPC"
+        },
+        {
+            "STT": 45,
+            "MSV": 651559,
+            "Name": "Mai Thị",
+            "FIELD4": "Thảo",
+            "Age": "25/10/02",
+            "Class": "K65TYB"
+        },
+        {
+            "STT": 46,
+            "MSV": 6655323,
+            "Name": "Thạch Phương",
+            "FIELD4": "Thảo",
+            "Age": "09/04/03",
+            "Class": "K66KEC"
+        },
+        {
+            "STT": 47,
+            "MSV": 654943,
+            "Name": "Nguyễn Thị",
+            "FIELD4": "Thắm",
+            "Age": "03/12/02",
+            "Class": "K65QLNNLA"
+        },
+        {
+            "STT": 48,
+            "MSV": 622519,
+            "Name": "Phạm Thanh",
+            "FIELD4": "Thiện",
+            "Age": "14/01/99",
+            "Class": "K62NHP"
+        },
+        {
+            "STT": 49,
+            "MSV": 650422,
+            "Name": "Nguyễn Thị",
+            "FIELD4": "Thu",
+            "Age": "07/02/02",
+            "Class": "K65QTLOA"
+        },
+        {
+            "STT": 50,
+            "MSV": 655416,
+            "Name": "Nguyễn Văn",
+            "FIELD4": "Tiến",
+            "Age": "06/03/02",
+            "Class": "K65KTTCA"
+        },
+        {
+            "STT": 51,
+            "MSV": 651140,
+            "Name": "Trần Đức",
+            "FIELD4": "Toàn",
+            "Age": "23/02/02",
+            "Class": "K65CNKTOB"
+        },
+        {
+            "STT": 52,
+            "MSV": 655572,
+            "Name": "Lưu Thị Huyền",
+            "FIELD4": "Trang",
+            "Age": "05/01/02",
+            "Class": "K65QLNNLA"
+        },
+        {
+            "STT": 53,
+            "MSV": 654896,
+            "Name": "Nguyễn Thị Huyền",
+            "FIELD4": "Trang",
+            "Age": "12/10/02",
+            "Class": "K65CNTPD"
+        },
+        {
+            "STT": 54,
+            "MSV": 652267,
+            "Name": "Trần Thị Ngọc",
+            "FIELD4": "Trâm",
+            "Age": "28/11/02",
+            "Class": "K65QTLOA"
+        },
+        {
+            "STT": 55,
+            "MSV": 653605,
+            "Name": "Trần Văn",
+            "FIELD4": "Trung",
+            "Age": "02/01/02",
+            "Class": "K65CNKTOB"
+        },
+        {
+            "STT": 56,
+            "MSV": 650787,
+            "Name": "Lương Huy",
+            "FIELD4": "Tú",
+            "Age": "10/02/01",
+            "Class": "K65CNTPC"
+        },
+        {
+            "STT": 57,
+            "MSV": 650024,
+            "Name": "Hoàng Văn",
+            "FIELD4": "Tuấn",
+            "Age": "31/12/02",
+            "Class": "K65CNTTA"
+        },
+        {
+            "STT": 58,
+            "MSV": 652053,
+            "Name": "Đoàn Thanh",
+            "FIELD4": "Tùng",
+            "Age": "19/11/02",
+            "Class": "K65CNKTOB"
+        },
+        {
+            "STT": 59,
+            "MSV": 6666386,
+            "Name": "Nguyễn Đăng Thùy",
+            "FIELD4": "Vân",
+            "Age": "06/06/03",
+            "Class": "K66KEC"
+        },
+        {
+            "STT": 60,
+            "MSV": 650905,
+            "Name": "Nguyễn Hải",
+            "FIELD4": "Yến",
+            "Age": "12/08/02",
+            "Class": "K65QTLOA"
+        }
+    ]
+
+}
