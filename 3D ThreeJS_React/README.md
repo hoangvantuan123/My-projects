@@ -6,7 +6,7 @@
 ```
 
 
-## Cài đặt [link]@react-three/fiber và [link]@react-three/drei
+## Cài đặt [link](@react-three/fiber) và [link](@react-three/drei)
 ```script
   npm install three @react-three/fiber @react-three/drei
 ```
@@ -77,4 +77,4 @@ export default function App() {
 
 
 ### Bài viết tham khảo :
-- [link]https://dev.to/nourdinedev/how-to-use-threejs-and-react-to-render-a-3d-model-of-your-self-4kkf
+- [link Blog](https://dev.to/nourdinedev/how-to-use-threejs-and-react-to-render-a-3d-model-of-your-self-4kkf)
