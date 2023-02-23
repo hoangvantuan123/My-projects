@@ -1,0 +1,83 @@
+﻿@model WebApplicationQLSV.Models.Diem
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("AddOrEdit", "Diem", FormMethod.Post, new { onsubmit = "return SubmitForm(this)" }))
+{
+    @Html.HiddenFor(model => model.ID)
+    <div class="form-group mt-3">
+        @Html.LabelFor(model => model.MaSV, new { @class = "control-label" })
+        @Html.EditorFor(model => model.MaSV, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.MaSV)
+    </div>
+    <div class="form-group mt-3 w-auto">
+        @Html.LabelFor(model => model.TenSV, new { @class = "control-label" })
+        @Html.EditorFor(model => model.TenSV, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.TenSV)
+    </div>
+    <div class="form-group mt-3">
+        @Html.LabelFor(model => model.MaMH, new { @class = "control-label" })
+        @Html.EditorFor(model => model.MaMH, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+
+    <div class="form-group mt-3">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DiemGK, new { @class = "control-label" })
+                    <div class="">
+                        @Html.EditorFor(model => model.DiemGK, new { htmlAttributes = new { @class = "form-control form-input" } })
+                        @Html.ValidationMessageFor(model => model.DiemGK, "", new { @class = "text-danger" })
+                        <span class="input-group-addon invisible"><i class="glyphicon glyphicon-th"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group mt-3">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DiemCK, new { @class = "control-label" })
+                    <div class="">
+                        @Html.EditorFor(model => model.DiemCK, new { htmlAttributes = new { @class = "form-control form-input" } })
+                        @Html.ValidationMessageFor(model => model.DiemCK, "", new { @class = "text-danger" })
+                        <span class="input-group-addon invisible"><i class="glyphicon glyphicon-th"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group mt-3">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DiemTB, new { @class = "control-label" })
+                    <div class="">
+                        @Html.EditorFor(model => model.DiemTB, new { htmlAttributes = new { @class = "form-control form-input" } })
+                        @Html.ValidationMessageFor(model => model.DiemTB, "", new { @class = "text-danger" })
+                        <span class="input-group-addon invisible"><i class="glyphicon glyphicon-th"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group  mt-3 mt-3">
+        <input type="submit" value="Submit" class="btn btn-primary" />
+        <input type="reset" value="Reset" class="btn" />
+    </div>
+}

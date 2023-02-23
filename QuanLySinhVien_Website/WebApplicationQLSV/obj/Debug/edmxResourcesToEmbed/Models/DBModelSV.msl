@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MvcCRUDDBModelStoreContainer" CdmEntityContainer="DBModelQLSV">
+    <EntitySetMapping Name="Diems">
+      <EntityTypeMapping TypeName="MvcCRUDDBModel.Diem">
+        <MappingFragment StoreEntitySet="Diem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="TenSV" ColumnName="TenSV" />
+          <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+          <ScalarProperty Name="DiemGK" ColumnName="DiemGK" />
+          <ScalarProperty Name="DiemCK" ColumnName="DiemCK" />
+          <ScalarProperty Name="DiemTB" ColumnName="DiemTB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lops">
+      <EntityTypeMapping TypeName="MvcCRUDDBModel.Lop">
+        <MappingFragment StoreEntitySet="Lop">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="TenSV" ColumnName="TenSV" />
+          <ScalarProperty Name="MaLop" ColumnName="MaLop" />
+          <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonHocs">
+      <EntityTypeMapping TypeName="MvcCRUDDBModel.MonHoc">
+        <MappingFragment StoreEntitySet="MonHoc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+          <ScalarProperty Name="TenMH" ColumnName="TenMH" />
+          <ScalarProperty Name="SoTC" ColumnName="SoTC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SinhViens">
+      <EntityTypeMapping TypeName="MvcCRUDDBModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="TenSV" ColumnName="TenSV" />
+          <ScalarProperty Name="Lop" ColumnName="Lop" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="NamSinh" ColumnName="NamSinh" />
+          <ScalarProperty Name="QueQuan" ColumnName="QueQuan" />
+          <ScalarProperty Name="DanToc" ColumnName="DanToc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

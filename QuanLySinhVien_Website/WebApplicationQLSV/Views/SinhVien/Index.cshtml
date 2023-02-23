@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "Danh Sách Sinh Viên";
+}
+
+<h2> Quản Lý Sinh Viên  </h2>
+
+<a class="btn btn-success" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("AddOrEdit","SinhVien")')"><i class="fa fa-plus"></i> Add New</a>
+<table id="sinhVienTable" class="table table-striped border table-bordered  " style="width:100%">
+   
+        <thead>
+            <tr>
+                <th scope="col">MaSV</th>
+                <th scope="col">TenSV</th>
+                <th scope="col">Lop</th>
+                <th scope="col">GioiTinh</th>
+                <th scope="col">NamSinh</th>
+                <th scope="col">QueQuan</th>
+                <th scope="col">DanToc</th>
+                <th scope="col"> </th>
+            </tr>
+        </thead>
+    </table>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"/>
+    <link href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+    @section scripts{
+        <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+
+        <script>
+
+       var Popup, dataTable;
+        $(document).ready(function () {
+            dataTable = $("#sinhVienTable").DataTable({
+                "ajax": {
+                    "url": "/SinhVien/GetData",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "MaSV" },
+                    { "data": "TenSV" },
+                    { "data": "Lop" },
+                    { "data": "GioiTinh" },
+                    { "data": "NamSinh" },
+                    { "data": "QueQuan" },
+                    { "data": "DanToc" },
+                    {"data":"ID" , "render" : function (data) {
+                        return "<a class='btn btn-default btn-sm' onclick=PopupForm('@Url.Action("AddOrEdit", "SinhVien")/" + data + "')><i class='fa fa-pencil'></i> Edit</a><a class='btn btn-danger btn-sm' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i> Delete</a>";
+                    },
+                        "orderable": false,
+                        "searchable":false,
+                        "width":"250px"
+                    }
+
+                ],
+
+                "language": {
+
+                    "emptyTable" : "No data found, Please click on <b>Add New</b> Button"
+                }
+            });
+        });
+        function PopupForm(url) {
+            var formDiv = $('<div/>');
+            $.get(url)
+                .done(function (response) {
+                    formDiv.html(response);
+
+                    Popup = formDiv.dialog({
+                        autoOpen: true,
+                        resizable: false,
+                        title: 'Điền chi tiết Sinh Viên',
+                        height: 500,
+                        width: 700,
+                        close: function () {
+                            Popup.dialog('destroy').remove();
+                        }
+
+                    });
+                });
+        }
+        function SubmitForm(form) {
+            $.validator.unobtrusive.parse(form);
+            if ($(form).valid()) {
+                $.ajax({
+                    type: "POST",
+                    url: form.action,
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        if (data.success) {
+                            Popup.dialog('close');
+                            dataTable.ajax.reload();
+
+                            $.notify(data.message, {
+                                globalPosition: "top center",
+                                className: "success"
+                            })
+
+                        }
+                    }
+                });
+            }
+            return false;
+        }
+         function Delete(id) {
+             if (confirm('Are You Sure to Delete this SinhVien Record ?'))
+            {
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Delete", "SinhVien")/' + id,
+                    success: function (data) {
+                        if (data.success)
+                        {
+                            dataTable.ajax.reload();
+
+                            $.notify(data.message, {
+                                globalPosition: "top center",
+                                className: "success"
+                            })
+
+                        }
+                    }
+
+                });
+            }
+        }
+
+        </script>
+    }

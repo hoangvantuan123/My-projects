@@ -1,0 +1,70 @@
+﻿@model WebApplicationQLSV.Models.SinhVien
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("AddOrEdit", "SinhVien", FormMethod.Post, new { onsubmit = "return SubmitForm(this)" }))
+{
+    @Html.HiddenFor(model => model.ID)
+    <div class="form-group mt-3">
+        @Html.LabelFor(model => model.MaSV, new { @class = "control-label" })
+        @Html.EditorFor(model => model.MaSV, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.MaSV)
+    </div>
+    <div class="form-group mt-3 w-auto">
+        @Html.LabelFor(model => model.TenSV, new { @class = "control-label" })
+        @Html.EditorFor(model => model.TenSV, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.TenSV)
+    </div>
+    <div class="form-group mt-3">
+        @Html.LabelFor(model => model.Lop, new { @class = "control-label" })
+        @Html.EditorFor(model => model.Lop, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    <div class="form-group mt-3">
+        @Html.LabelFor(model => model.GioiTinh, new { @class = "control-label" })
+        @Html.EditorFor(model => model.GioiTinh, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    <div class="form-group mt-3">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="row">
+            
+            <div class="col-sm-3">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NamSinh, new { @class = "control-label" })
+                    <div class="">
+                        @Html.EditorFor(model => model.NamSinh, new { htmlAttributes = new { @class = "form-control form-input" } })
+                        @Html.ValidationMessageFor(model => model.NamSinh, "", new { @class = "text-danger" })
+                        <span class="input-group-addon invisible"><i class="glyphicon glyphicon-th"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @*<div class="form-group mt-3">
+
+        @Html.LabelFor(model => model.Email, new { @class = "control-label" })
+
+        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+
+    </div>*@
+    <div class="form-group mt-3">
+
+        @Html.LabelFor(model => model.QueQuan, new { @class = "control-label" })
+
+        @Html.EditorFor(model => model.QueQuan, new { htmlAttributes = new { @class = "form-control" } })
+
+    </div>
+    <div class="form-group mt-3">
+
+        @Html.LabelFor(model => model.DanToc, new { @class = "control-label" })
+
+        @Html.EditorFor(model => model.DanToc, new { htmlAttributes = new { @class = "form-control" } })
+
+    </div>
+    <div class="form-group  mt-3 mt-3">
+        <input type="submit" value="Submit" class="btn btn-primary" />
+        <input type="reset" value="Reset" class="btn" />
+    </div>
+}

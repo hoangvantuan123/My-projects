@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MvcCRUDDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Diem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MaSV" Type="char" MaxLength="15" />
+          <Property Name="TenSV" Type="nvarchar" MaxLength="50" />
+          <Property Name="MaMH" Type="char" MaxLength="15" />
+          <Property Name="DiemGK" Type="float" />
+          <Property Name="DiemCK" Type="float" />
+          <Property Name="DiemTB" Type="float" />
+        </EntityType>
+        <EntityType Name="Lop">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MaSV" Type="char" MaxLength="15" />
+          <Property Name="TenSV" Type="nvarchar" MaxLength="50" />
+          <Property Name="MaLop" Type="nvarchar" MaxLength="50" />
+          <Property Name="TenLop" Type="nvarchar" MaxLength="70" />
+        </EntityType>
+        <EntityType Name="MonHoc">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MaMH" Type="char" MaxLength="15" />
+          <Property Name="TenMH" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoTC" Type="int" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MaSV" Type="char" MaxLength="15" />
+          <Property Name="TenSV" Type="nvarchar" MaxLength="50" />
+          <Property Name="Lop" Type="nvarchar" MaxLength="30" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="30" />
+          <Property Name="NamSinh" Type="int" />
+          <Property Name="QueQuan" Type="nvarchar" MaxLength="100" />
+          <Property Name="DanToc" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityContainer Name="MvcCRUDDBModelStoreContainer">
+          <EntitySet Name="Diem" EntityType="Self.Diem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MonHoc" EntityType="Self.MonHoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MvcCRUDDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Diem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MaSV" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Name="TenSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MaMH" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Name="DiemGK" Type="Double" />
+          <Property Name="DiemCK" Type="Double" />
+          <Property Name="DiemTB" Type="Double" />
+        </EntityType>
+        <EntityType Name="Lop">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MaSV" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Name="TenSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MaLop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TenLop" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MonHoc">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MaMH" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Name="TenMH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoTC" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MaSV" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Name="TenSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Lop" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="GioiTinh" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="NamSinh" Type="Int32" />
+          <Property Name="QueQuan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DanToc" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DBModelQLSV" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Diems" EntityType="Self.Diem" />
+          <EntitySet Name="Lops" EntityType="Self.Lop" />
+          <EntitySet Name="MonHocs" EntityType="Self.MonHoc" />
+          <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MvcCRUDDBModelStoreContainer" CdmEntityContainer="DBModelQLSV">
+          <EntitySetMapping Name="Diems">
+            <EntityTypeMapping TypeName="MvcCRUDDBModel.Diem">
+              <MappingFragment StoreEntitySet="Diem">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+                <ScalarProperty Name="TenSV" ColumnName="TenSV" />
+                <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+                <ScalarProperty Name="DiemGK" ColumnName="DiemGK" />
+                <ScalarProperty Name="DiemCK" ColumnName="DiemCK" />
+                <ScalarProperty Name="DiemTB" ColumnName="DiemTB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lops">
+            <EntityTypeMapping TypeName="MvcCRUDDBModel.Lop">
+              <MappingFragment StoreEntitySet="Lop">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+                <ScalarProperty Name="TenSV" ColumnName="TenSV" />
+                <ScalarProperty Name="MaLop" ColumnName="MaLop" />
+                <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MonHocs">
+            <EntityTypeMapping TypeName="MvcCRUDDBModel.MonHoc">
+              <MappingFragment StoreEntitySet="MonHoc">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+                <ScalarProperty Name="TenMH" ColumnName="TenMH" />
+                <ScalarProperty Name="SoTC" ColumnName="SoTC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SinhViens">
+            <EntityTypeMapping TypeName="MvcCRUDDBModel.SinhVien">
+              <MappingFragment StoreEntitySet="SinhVien">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+                <ScalarProperty Name="TenSV" ColumnName="TenSV" />
+                <ScalarProperty Name="Lop" ColumnName="Lop" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="NamSinh" ColumnName="NamSinh" />
+                <ScalarProperty Name="QueQuan" ColumnName="QueQuan" />
+                <ScalarProperty Name="DanToc" ColumnName="DanToc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

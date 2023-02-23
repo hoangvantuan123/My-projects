@@ -1,0 +1,31 @@
+﻿@model WebApplicationQLSV.Models.Lop
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("AddOrEdit", "Lop", FormMethod.Post, new { onsubmit = "return SubmitForm(this)" }))
+{
+    @Html.HiddenFor(model => model.ID)
+    <div class="form-group mt-3">
+        @Html.LabelFor(model => model.MaSV, new { @class = "control-label" })
+        @Html.EditorFor(model => model.MaSV, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.MaSV)
+    </div>
+    <div class="form-group mt-3 w-auto">
+        @Html.LabelFor(model => model.TenSV, new { @class = "control-label" })
+        @Html.EditorFor(model => model.TenSV, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.TenSV)
+    </div>
+    <div class="form-group mt-3">
+        @Html.LabelFor(model => model.MaLop, new { @class = "control-label" })
+        @Html.EditorFor(model => model.MaLop, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    <div class="form-group mt-3">
+        @Html.LabelFor(model => model.TenLop, new { @class = "control-label" })
+        @Html.EditorFor(model => model.TenLop, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    <div class="form-group  mt-3 mt-3">
+        <input type="submit" value="Submit" class="btn btn-primary" />
+        <input type="reset" value="Reset" class="btn" />
+    </div>
+}

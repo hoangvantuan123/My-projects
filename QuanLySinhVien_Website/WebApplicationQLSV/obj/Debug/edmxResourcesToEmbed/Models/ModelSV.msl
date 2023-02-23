@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MvcCRUDDBModelStoreContainer" CdmEntityContainer="DBModelQLSV">
+    <EntitySetMapping Name="SinhViens">
+      <EntityTypeMapping TypeName="MvcCRUDDBModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="TenSV" ColumnName="TenSV" />
+          <ScalarProperty Name="Lop" ColumnName="Lop" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="QueQuan" ColumnName="QueQuan" />
+          <ScalarProperty Name="DanToc" ColumnName="DanToc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
